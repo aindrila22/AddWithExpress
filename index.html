@@ -1,0 +1,65 @@
+<html>
+    <title>Calculator</title>
+    <head>
+        <meta name="utf-8">
+        <link rel="stylesheet" href="./style.css">
+
+    </head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    background: rgb(90, 187, 243);
+}
+.centerdiv{
+    margin-top: 15rem;
+    border-radius: 15px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+ 
+}
+ .h2{
+   
+    color: rgb(19, 11, 128);
+    margin: none;  
+}
+.input{
+
+    width: 35rem;
+    height: 5rem;
+    background-color: rgb(237, 240, 235);
+    color: rgb(13, 17, 78);
+    border: 2px solid rgb(100, 194, 113);
+    text-align: center;
+    font-size: medium;
+    font-style: verdana;
+}
+.input:hover{
+    color: rgb(13, 17, 78);
+    border: 2px solid rgb(100, 194, 113);
+}
+.btn{
+    width: 20%;
+    height: 40px;
+    background: rgb(168, 197, 3);
+    color: white;
+    border: 2px solid rgb(78, 253, 253);
+}
+
+    </style>
+    <body>
+      
+        <div class="centerdiv">
+            <h1 class="h2">Calculating Sum of 2 Numbers</h1><br><br>
+            <form method ="post">
+            <input type="number" name="num1" class="input" placeholder="Enter your 1st number" required="required" /><br><br><br>
+            <input type="number" name="num2"  class="input" placeholder="Enter your 2nd number" required="required" /><br><br><br>
+           <button  class="btn" >Your Result</button>
+        </form>
+        </div>
+    </body>
+</html>
